@@ -1,0 +1,9 @@
+<resources>
+    <string name="app_name">Login</string>
+    <string name="tAptk">APOTEK SEHAT</string>
+    <string name="eEmail">Email</string>
+    <string name="ePwd">Password</string>
+    <string name="btn">MASUK</string>
+    <string name="tLOGIN">LOGIN MASUK</string>
+    <style name="appName" parent="Theme.AppCompat.NoActionBar"></style>
+</resources>
