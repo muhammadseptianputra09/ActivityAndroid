@@ -22,15 +22,22 @@ String Email, password;
         edEmail=findViewById(R.id.email);
         edPwd=findViewById(R.id.pwd);
 
+
         btnlogin.setOnClickListener(new View.OnClickListener() {
             @Override
+
             public void onClick(View v) {
                 Email = edEmail.getText().toString();
                 password = edPwd.getText().toString();
 
-                Toast t = Toast.makeText(getApplicationContext(),
-                        "Berhasil Login",Toast.LENGTH_SHORT);
-                t.show();
+            if(Email.equals("unang") && password.equals("ganteng"))
+                {
+                    Toast.makeText(MainActivity.this, "LOGIN BERHASIL", Toast.LENGTH_SHORT).show();
+
+                }else{
+                    Toast.makeText(MainActivity.this, "IsI DULU TUH YANG KOSONG",Toast.LENGTH_SHORT).show();
+                }
+
             }
         });
     }
