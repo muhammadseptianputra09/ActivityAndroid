@@ -2,6 +2,7 @@ package com.example.login;
 
 import androidx.appcompat.app.AppCompatActivity;
 
+import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
@@ -10,9 +11,11 @@ import android.widget.Toast;
 
 public class MainActivity extends AppCompatActivity {
 
-Button btnlogin;
-EditText edEmail, edPwd;
-String Email, password;
+    //declare variable
+    Button btnlogin;
+    EditText edEmail, edPwd;
+    String Email, password;
+
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -34,8 +37,20 @@ String Email, password;
                 {
                     Toast.makeText(MainActivity.this, "LOGIN BERHASIL", Toast.LENGTH_SHORT).show();
 
+                    Bundle b = new Bundle();
+                    b.putString("a",Email.trim());
+                    b.putString("b",password.trim());
+                    Intent i = new Intent(getApplicationContext(), ActivityKedua.class);
+                    i.putExtras(b);
+                    startActivity(i);
+
                 }else{
-                    Toast.makeText(MainActivity.this, "IsI DULU TUH YANG KOSONG",Toast.LENGTH_SHORT).show();
+
+                    if (Email.isEmpty() || password.isEmpty()){
+                        Toast.makeText(MainActivity.this, "IsI DULU TUH YANG KOSONG",Toast.LENGTH_SHORT).show();
+                    }else {
+                        Toast.makeText(MainActivity.this, "Login Gagal",Toast.LENGTH_SHORT).show();
+                    }
                 }
 
             }
