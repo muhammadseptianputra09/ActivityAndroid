@@ -1,0 +1,105 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/background"
+    tools:context=".DaftarActivity">
+
+    <TextView
+        android:id="@+id/textView3"
+        android:layout_width="139dp"
+        android:layout_height="27dp"
+        android:layout_marginTop="64dp"
+        android:fontFamily="serif-monospace"
+        android:text="@string/Idaftar"
+        android:textAlignment="center"
+        android:textColor="@color/black"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <EditText
+        android:id="@+id/MasukkanNama"
+        android:layout_width="331dp"
+        android:layout_height="44dp"
+        android:layout_marginTop="72dp"
+        android:fontFamily="serif-monospace"
+        android:hint="@string/eNama"
+        android:textAlignment="center"
+        android:textColor="@color/black"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView3"></EditText>
+
+    <EditText
+        android:id="@+id/Alamat"
+        android:layout_width="331dp"
+        android:layout_height="44dp"
+        android:layout_marginTop="40dp"
+        android:hint="@string/ealamat"
+        android:fontFamily="serif-monospace"
+        android:textAlignment="center"
+        android:textColor="@color/black"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/MasukkanNama"></EditText>
+
+    <EditText
+        android:id="@+id/MasukkanEmail"
+        android:layout_width="331dp"
+        android:layout_height="44dp"
+        android:layout_marginTop="40dp"
+        android:fontFamily="serif-monospace"
+        android:textAlignment="center"
+        android:textColor="@color/black"
+        android:hint="@string/eemail"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/Alamat"></EditText>
+
+    <EditText
+        android:id="@+id/MasukkanPassword"
+        android:layout_width="331dp"
+        android:layout_height="44dp"
+        android:layout_marginTop="40dp"
+        android:fontFamily="serif-monospace"
+        android:textAlignment="center"
+        android:textColor="@color/black"
+        android:hint="@string/epass"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/MasukkanEmail"></EditText>
+
+    <EditText
+        android:id="@+id/MasukkanPasswordKembali"
+        android:layout_width="331dp"
+        android:layout_height="44dp"
+        android:layout_marginTop="40dp"
+        android:fontFamily="serif-monospace"
+        android:textAlignment="center"
+        android:textColor="@color/black"
+        android:hint="@string/erepass"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/MasukkanPassword"></EditText>
+
+    <com.google.android.material.floatingactionbutton.FloatingActionButton
+        android:id="@+id/floatingBtn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="44dp"
+        android:clickable="true"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.887"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/MasukkanPasswordKembali"
+        app:layout_constraintVertical_bias="0.0"
+        app:srcCompat="@drawable/button"
+        android:backgroundTint="@android:color/holo_blue_light"/>
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

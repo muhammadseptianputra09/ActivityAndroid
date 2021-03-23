@@ -5,6 +5,15 @@
     <string name="ePwd">Password</string>
     <string name="btn">MASUK</string>
     <string name="tLOGIN">LOGIN MASUK</string>
-    <string name="talamat">JL sehat no 10 kota ujung pandang</string>
+    <string name="talamat">Plaju, Palembang, Sumatra Selatan </string>
+    <string name="tslogan">ANDA SEHAT KAMI SENANG :)</string>
+    <string name="mDaftar">Pendaftaran</string>
+    <string name="Idaftar">Daftar</string>
+    <string name="eNama">Masukan Nama</string>
+    <string name="eemail">Masukkan Email</string>
+    <string name="epass">Masukkan Password</string>
+    <string name="erepass">Masukkan Password Kembali</string>
+    <string name="ealamat">Masukkan Alamat</string>
+
     <style name="appName" parent="Theme.AppCompat.NoActionBar"></style>
 </resources>
