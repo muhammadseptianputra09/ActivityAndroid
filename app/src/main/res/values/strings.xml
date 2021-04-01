@@ -14,6 +14,14 @@
     <string name="epass">Masukkan Password</string>
     <string name="erepass">Masukkan Password Kembali</string>
     <string name="ealamat">Masukkan Alamat</string>
+    <string name="lihat">Lihat Data</string>
+    <string name="editdata">Edit Data </string>
+    <string name="datakontak">Data Kontak</string>
+    <string name="namaitem">Nama Kontak</string>
+    <string name="detailkontak">Detail Kontak</string>
+    <string name="nama">Nama</string>
+    <string name="notel">Nomor Telepon</string>
+
 
     <style name="appName" parent="Theme.AppCompat.NoActionBar"></style>
 </resources>

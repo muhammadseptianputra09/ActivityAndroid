@@ -44,7 +44,7 @@ public class MainActivity extends Activity {
                     Bundle b = new Bundle();
                     b.putString("a",Email.trim());
                     b.putString("b",password.trim());
-                    Intent i = new Intent(getApplicationContext(), DaftarActivity.class);
+                    Intent i = new Intent(getApplicationContext(), Home_Activity.class);
                     i.putExtras(b);
                     startActivity(i);
 
@@ -72,7 +72,7 @@ public class MainActivity extends Activity {
     public boolean onOptionsItemSelected(MenuItem item) {
         if (item.getItemId() == R.id.mnDaftar)
         {
-            Intent i = new Intent(getApplicationContext(), DaftarActivity.class);
+            Intent i = new Intent(getApplicationContext(), Home_Activity.class);
             startActivity(i);
         }
         return super.onOptionsItemSelected(item);
